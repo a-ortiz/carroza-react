@@ -1,0 +1,12 @@
+.Sidebar {
+  height: 100%;
+}
+
+.Sidebar-list {
+  height: calc(100% - 56px);
+  /*overflow-y: auto;*/
+}
+
+.Sidebar-navigation {
+
+}
