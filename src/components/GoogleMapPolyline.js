@@ -16,6 +16,10 @@ class GoogleMapPolyline extends Component {
     this.polyline = polyline;
   }
 
+  componentWillReceiveProps(nextProps) {
+    this.polyline.setPath(nextProps.points);
+  }
+
   componentWillUnmount() {
     if (this.polyline) {
       this.polyline.setMap(null);

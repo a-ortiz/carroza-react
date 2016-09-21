@@ -40,6 +40,10 @@ class GoogleMapMarker extends Component {
     this.infoWindow = infoWindow;
   }
 
+  componentWillReceiveProps(nextProps) {
+    this.marker.setPosition(nextProps.position);
+  }
+
   componentWillUnmount() {
     this.clickListener.remove();
     this.clickListener = null;
